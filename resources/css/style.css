@@ -14,14 +14,15 @@ body {
   flex-wrap: wrap;
 }
 
-header {
+header.flex-container{
   display: flex;
   position: fixed;
   z-index: 1;
   height: 69px;
   border-bottom: 1px solid seashell;
   align-items: center;
-  width: 100%
+  width: 100%;
+  background-color: black;
 }
 
 header img {
@@ -41,4 +42,26 @@ nav span {
 
 nav a {
   color: seashell;
+}
+
+.main-content {
+  padding-top: 69px;
+}
+
+h2, h3, h4 {
+  margin: 0px;
+  padding: 10px;
+}
+
+#mission {
+  height: 700px;
+  width: 1200px;
+  background-image: url(../images/img-mission-background.jpg);
+  display: flex;
+}
+
+.image-text {
+  background-color: black;
+  margin: auto;
+  width: inherit;
 }
